@@ -1,0 +1,27 @@
+import React, { Component } from 'react';
+import {View} from 'react-native'
+
+const Card =({children})=> {
+        return (
+            <View
+            style={styles.card}
+             >
+            {children}
+            </View>
+        );
+}
+
+const styles = {
+    card : {
+        borderWidth : 1 ,
+        borderRadius : 2 ,
+        borderColor : '#ddd' ,
+        borderBottomWidth : 0 ,
+        elevation : 1 ,
+        marginLeft : 5 ,
+        marginRight : 5 ,
+        marginTop : 10
+    }
+}
+
+export  {Card};
